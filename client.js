@@ -1,27 +1,31 @@
+// step 2: Move the connect function from play.js into client.js.
 const net = require('net');
-const { IP, PORT } = require('./constants');
+const { IP, PORT } = require("./constants");
 
-const connect = function() {
-  const conn = net.createConnection({
-    host: IP,
-    port: PORT
-  });
+const connect = function () {
+    const conn = net.createConnection({
+      host: "localhost",
+      port: 50541
+    });
   
-  conn.setEncoding('utf8');
+    // interpret incoming data as text
+    conn.setEncoding("utf8");
   
-  conn.on('connect', () => {
-    console.log("connected to SERVER...");
-    conn.write("Name: SCM");
-  });
+    //  added this:
+     conn.on('data', (data) => {
+      console.log('Server says', data)
+   });
 
-  conn.on('data', data => {
-    console.log( console.log("SERVER says: _______", data));
-  });
-
-  conn.on('connect', () => {
+   conn.on('connect', () => {
     console.log('connected');
-  })
-  return conn;
-};
+  });
 
-module.exports = { connect };
+    // add Name by including this script to client.js
+     conn.on('connect', () => {
+     conn.write('Name: SCM');
+    });
+  
+    return conn;
+  };
+
+  module.exports = { connect };
