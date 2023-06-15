@@ -9,12 +9,16 @@ To play the game, one needs to implement a game client.
 Before you can run this client, you will need to be running the server side which you can download and install from here. 
 
 ## Installation
-Clone from repository
 
 git clone https://github.com/lighthouse-labs/snek-multiplayer.git
+
 cd snek-multiplayer
+
 npm install
+
 npm run play
+
+
 
 ## Final Product
 
