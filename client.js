@@ -4,8 +4,8 @@ const { IP, PORT } = require("./constants");
 
 const connect = function () {
     const conn = net.createConnection({
-      host: "localhost",
-      port: 50541
+      host: IP,
+      port: PORT
     });
   
     // interpret incoming data as text
@@ -16,14 +16,17 @@ const connect = function () {
       console.log('Server says', data)
    });
 
+   // add Name by including this script to client.js
    conn.on('connect', () => {
     console.log('connected');
+    conn.write('Name: SCM');
+
   });
 
-    // add Name by including this script to client.js
-     conn.on('connect', () => {
-     conn.write('Name: SCM');
-    });
+    
+     //conn.on('connect', () => {
+     //conn.write('Name: SCM');
+   // });
   
     return conn;
   };
