@@ -8,7 +8,16 @@ This is simply a multiplayer take on the genre.
 To play the game, one needs to implement a game client.
 Before you can run this client, you will need to be running the server side which you can download and install from here. 
 
+## keyboard shortcuts for playing snake
+
+w = Move up
+a = Move left
+s = Move down
+d = Move right
+
+
 ## Installation
+Clone from repository
 
 git clone https://github.com/lighthouse-labs/snek-multiplayer.git
 
@@ -22,10 +31,13 @@ npm run play
 
 ## Final Product
 
-!["screenshot description"](#)
+!["This is how the console looks like! There is the snake"](#)
 
-![Alt text](image.png)
+![Alt text](/assets/image2.png)
 
+!["She is eating!!"](#)
+
+![Alt text](/assets/image.png)
 
 
 ## Getting Started
