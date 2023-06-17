@@ -11,10 +11,18 @@ Before you can run this client, you will need to be running the server side whic
 ## keyboard shortcuts for playing snake
 
 w = Move up
+
 a = Move left
+
 s = Move down
+
 d = Move right
 
+m = Say: hello!!! am Done finally
+
+n = Say: This was great!!
+
+b = Say: There is not chance!!
 
 ## Installation
 Clone from repository
@@ -31,11 +39,11 @@ npm run play
 
 ## Final Product
 
-!["This is how the console looks like! There is the snake"](#)
+## This is how the console looks like! There is the snake
 
 ![Alt text](/assets/image2.png)
 
-!["She is eating!!"](#)
+## She is eating!!
 
 ![Alt text](/assets/image.png)
 
