@@ -26,7 +26,7 @@ const setupInput = function(conn) {
 
       //  Implement some special keys that send canned messages to the server, for everyone to see.
       } else if ( data === 'm') {
-        connection.write('Say: hello!!! am Done finally')
+        connection.write('Say: hello!!! am done')
       } else if ( data === 'n') {
         connection.write('Say: This was great!!')
       }else if ( data === 'b') {
